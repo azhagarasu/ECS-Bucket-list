@@ -8,9 +8,9 @@ URL of the ECS Node IP or the loadbalancer is hardcoded in the script. Edit the 
 Likewise change "ecs_obj_user" and "ecs_secret_key" with the ECS object user and the respective secret key.\n\n')
 
 #Connection information
-ecs_url = 'https://10.63.17.148:9021' # IP address of ECS
-ecs_obj_user = 'az_nfs' # ECS object user
-ecs_secret_key = 'KosZlKoqOlGj9geV0ea/nWIJg2ndKtV9/flEqEVC' # Secret key belonging object user
+ecs_url = 'https://x.x.x.x:9021' # IP address of ECS
+ecs_obj_user = 'Enter objtect user here' # ECS object user
+ecs_secret_key = 'Enter secret key here' # Secret key belonging object user
 
 #The url we use is secure and the SSL certificate provided by ECS is not verified,
 #so we will capture the InsecureRequestWarning with a logging module.
