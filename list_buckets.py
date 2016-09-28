@@ -26,5 +26,7 @@ s3 = session.resource('s3', endpoint_url=ecs_url, verify=False,
                       config=Config(signature_version='s3', s3={'addressing_style': 'path'}))
 
 #Prints all the buckets owned by the respective user.
+print ('User', ecs_obj_user, 'owns the following buckets:\n')
 for bucket in s3.buckets.all():
-    print ('User', ecs_obj_user, 'owns the following buckets:\n\n',bucket.name)
+    print (bucket.name)
+print ('\n')
